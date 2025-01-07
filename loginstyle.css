@@ -91,9 +91,11 @@ span:nth-child(4) {
 }
 
 
-.submitbtn {
+.btn {
     text-decoration: none;
     color: white;
+    background-color: #A294F9;
+    outline: none;
 }
 
 .text-center {
@@ -105,4 +107,10 @@ h1 {
     color: #fff;
     font-size: 3rem;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1024px){
+    .login-container {
+        margin: 20px;
+    }
 }
