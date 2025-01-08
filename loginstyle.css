@@ -18,9 +18,18 @@
     padding: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background: #2a2a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
 }
 
 .loading {
@@ -85,12 +94,6 @@ span:nth-child(4) {
     background: #A294F9;
 }
 
-/* Fade-out effect for the login card */
-#loginCard {
-    transition: opacity 1s ease-out;
-}
-
-
 .btn {
     text-decoration: none;
     color: white;
@@ -111,6 +114,17 @@ h1 {
 
 @media (max-width: 1024px){
     .login-container {
-        margin: 20px;
+        margin: 10px, 10px, 10px, 10px;
+    }
+
+    .card {
+        margin: 10px, 10px, 10px, 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .login-container {
+        margin: 10px auto;
+        padding: 15px;
     }
 }

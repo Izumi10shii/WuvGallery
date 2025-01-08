@@ -38,7 +38,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#gallery" class="nav-link">
                         <span class="nav-icon material-symbols-outlined">Gallery_Thumbnail</span>
                         <span class="nav-label">Gallery</span>
                     </a>
@@ -46,7 +46,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#favorite" class="nav-link">
                         <span class="nav-icon material-symbols-outlined">favorite</span>
                         <span class="nav-label">Favorites</span>
                     </a>
@@ -54,7 +54,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#other" class="nav-link">
                         <span class="nav-icon material-symbols-outlined">star_rate</span>
                         <span class="nav-label">Others</span>
                     </a>
@@ -62,7 +62,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#diary" class="nav-link">
                         <span class="nav-icon material-symbols-outlined">auto_stories</span>
                         <span class="nav-label">Diary</span>
                     </a>
@@ -72,12 +72,41 @@
         </nav>
     </aside>
 
-    <div class="homepage">
-        <div class="titlepage">・❥・ WuvGallery ・❥・</div>
-        <hr>
-        <div class="description">This is the WuvGallery for Chelle and David! <br>This is where we store our memories, favorites, moments and more!</div>
+    <section class="home" id="home">
+        <div class="homepage">
+            <div class="titlepage">・❥・ WuvGallery ・❥・</div>
+            <hr>
+            <div class="description">This is the WuvGallery for Chelle and David! <br>This is where we store our memories, favorites, moments and more!</div>
+            <hr>
+            <button class="clickme" onclick="showOverlay()">Surprise!!</button>
 
-    </div>
+            <div id="overlay" class="overlay">
+                <div class="message-box">
+                  <p id="message">Happy 2nd Anniversary Love! I am very grateful for everything you've done for me. Thank you for being the best Girlfriend I could ask for. Thank you for being with me everytime whenever I need you. My pretty lovelove, baby, wifey, lovey, cutiepie etc. hehe. This website is my gift to you, this will be the heart of our relationship whether it is for memorable pictures, videos, or even stories. Let's love each other forever and ever - Love, David</p>
+                  <button class="close-btn" onclick="closeOverlay()">Close</button>
+                </div>
+            </div>
+
+            <div class="bottomtext">˗ˏˋ 01 - 27 - 25 ´ˎ˗ </div>
+            <div class="bottomtext1">ChelleDavid</div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="section-title">Gallery o((>ω< ))o</div>
+    </section>
+
+    <section class="favorites" id="favorite">
+        <div class="section-title">Favorites (●'◡'●)</div>     
+    </section>
+
+    <section class="other" id="other">
+        <div class="section-title">Others (. ❛ ᴗ ❛.)</div>     
+    </section>
+
+    <section class="diary" id="diary">
+        <div class="section-title">Diary (✿◠‿◠)</div> 
+    </section>
 
     <script src="script.js"></script>
 </body>

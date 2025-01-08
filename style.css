@@ -10,7 +10,15 @@
 body {
     min-height: 100vh;
     background-image: linear-gradient(#F5EFFF, #E5D9F2);
+    overflow-x: hidden;
+    max-width: 100%;
 }
+
+section {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 
 .sidebar {
     width: 270px;
@@ -160,6 +168,7 @@ body {
 
 @media (max-width: 1024px){
     .sidebar {
+        z-index: 999;
         height: 56px;
         overflow-y: hidden;
         scrollbar-width: none;
@@ -215,6 +224,15 @@ body {
 
 /* HomePage */
 
+#home {
+    min-height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(#a294f9 0.5px, transparent 0.5px), radial-gradient(#a294f9 0.5px, transparent 0.5px);
+    background-size: 51px 51px;
+    background-position: 0 0, 25.5px 25.5px;
+    background-color: #f5efff;
+}
+
 .homepage {
     margin: 10px;
     padding: 0;
@@ -231,6 +249,9 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 5rem;
+    color: white;
+    background-color: #a194f93d;
+    border-radius: 25px;
 }
 
 .description {
@@ -239,4 +260,167 @@ body {
     justify-content: center;
     text-align: center;
     font-size: 1.5rem;
+    color: white;
+    background-color: #a194f93d;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.clickme {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #A294F9;
+    border-radius: 16px;
+    outline: none;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+ /* The overlay (hidden by default) */
+ .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease
+  }
+
+  /* The message box inside the overlay */
+  .message-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    max-width: 300px;
+    margin: 0 20px;
+  }
+
+  /* Close button for the overlay */
+  .close-btn {
+    background-color:#CDC1FF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .bottomtext {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  .bottomtext1 {
+    position: absolute;
+    bottom: 40px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+  }
+
+/* Responsive Home */
+@media (max-width: 768px) {
+    .titlepage {
+        font-size: 1.8rem;
+    }
+
+    .description {
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+
+    .bottomtext {
+        bottom: 0;
+        font-size: 1.3rem;
+    }
+
+    .bottomtext1 {
+        bottom: 25px;
+        font-size: 1rem;
+      }
+    
+}
+
+/* Gallery */
+#gallery {
+    margin: 10px 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #E5D9F2;
+    overflow-x: hidden;
+}
+
+.section-title {
+    top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 5rem;
+    background-color: #dbc4f134;
+}
+
+/* Responsive Gallery */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Favorites */
+#favorite {
+    margin: 10px 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #CDC1FF;
+    overflow-x: hidden;
+}
+
+/* Others */
+#other {
+    margin: 10px 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: #A294F9;
+    overflow-x: hidden;
+}
+
+/* Diary */
+#diary {
+    margin: 10px 0;
+    padding: 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(154, 137, 219);
+    overflow-x: hidden;
 }
