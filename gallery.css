@@ -9,9 +9,7 @@
 
 body {
     min-height: 100vh;
-    background-image: radial-gradient(#ffffff 1px, transparent 1px);
-    background-size: 28px 28px;
-    background-color: #e2ddf7;
+    background-image: linear-gradient(#F5EFFF, #E5D9F2);
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -23,7 +21,6 @@ section {
 
 
 .sidebar {
-    z-index: 100;
     width: 270px;
     position: fixed;
     margin: 16px;
@@ -171,7 +168,7 @@ section {
 
 @media (max-width: 1024px){
     .sidebar {
-        z-index: 100;
+        z-index: 999;
         height: 56px;
         overflow-y: hidden;
         scrollbar-width: none;
@@ -225,225 +222,32 @@ section {
     
 }
 
-/* HomePage */
-
-#home {
-    z-index: -100;
-    min-height: 100vh;
-    width: 100%;
-    background-image: radial-gradient(#a294f9 0.5px, transparent 0.5px), radial-gradient(#a294f9 0.5px, transparent 0.5px);
-    background-size: 51px 51px;
-    background-position: 0 0, 25.5px 25.5px;
-    background-color: #f5efff;
-}
-
-.box-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.box-area li {
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    background: rgba(168, 119, 247, 0.514);
-    animation: animate 20s linear infinite;
-    bottom: -150px;
-}
-
-.box-area li:nth-child(1) {
-    left: 86%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-    border-radius: 100px;
-}
-
-.box-area li:nth-child(2) {
-    left: 12%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-}
-
-.box-area li:nth-child(3) {
-    left: 70%;
-    width: 100px;
-    height: 100px;
-    animation-duration: 5.5s;
-}
-
-.box-area li:nth-child(4) {
-    left: 42%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    border-radius: 100px;
-    animation-duration: 15s;
-}
-
-.box-area li:nth-child(5) {
-    left: 65%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-}
-
-.box-area li:nth-child(6) {
-    left: 15%;
-    width: 110px;
-    height: 110px;
-    border-radius: 100px;
-    animation-delay: 3.5s;
-}
-
-@keyframes animate {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(-800px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-#home {
-    min-height: 100vh;
-    width: 100%;
-    background-image: radial-gradient(#ffffff 1px, transparent 1px);
-    background-size: 28px 28px;
-    background-color: #e2ddf7;
-}
-
-.homepage {
-    margin: 10px;
+/* Gallery */
+#gallery {
+    margin: 10px 0;
     padding: 0;
+    padding-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    flex-direction: column;
-}
-
-.titlepage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 5rem;
-    color: white;
-    background-color: #a194f93d;
-    border-radius: 25px;
-}
-
-.description {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    background-color: #a194f93d;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.clickme {
-    z-index: 5;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #A294F9;
-    border-radius: 16px;
-    outline: none;
-    color: white;
-    box-shadow: none;
-    border: none;
-}
-
- /* The overlay (hidden by default) */
- .overlay {
-    z-index: 101;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease
-  }
+    flex-direction: column;
+    background-color: #E5D9F2;
+    overflow-x: hidden;
+}
 
-  /* The message box inside the overlay */
-  .message-box {
-    background-color: white;
-    padding: 20px;
+.section-title {
+    top: 5px;
+    padding: 10px;
     border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    max-width: 300px;
-    margin: 0 20px;
-  }
-
-  /* Close button for the overlay */
-  .close-btn {
-    background-color:#CDC1FF;
     color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
+    font-size: 5rem;
+    background-color: #dbc4f134;
+}
 
-  .bottomtext {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 2rem;
-    color: white;
-  }
-
-  .bottomtext1 {
-    position: absolute;
-    bottom: 40px;
-    padding-bottom: 10px;
-    font-size: 2rem;
-    color: white;
-  }
-
-/* Responsive Home */
+/* Responsive Gallery */
 @media (max-width: 768px) {
-    .titlepage {
-        font-size: 1.8rem;
+    .section-title {
+        font-size: 1.5rem;
     }
-
-    .description {
-        padding: 5px;
-        font-size: 1.1rem;
-    }
-
-    .bottomtext {
-        bottom: 0;
-        font-size: 1.3rem;
-    }
-
-    .bottomtext1 {
-        bottom: 25px;
-        font-size: 1rem;
-      }
-    
 }
