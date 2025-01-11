@@ -36,3 +36,9 @@ function showOverlay() {
       overlay.style.display = 'none';
     }, 300); // Delay to match the fade-out transition duration
   }
+
+  $(window).on("load", function() {
+    setTimeout(function() {
+        $(".loader-wrapper").fadeOut("slow"); // Fades out smoothly after 2 seconds
+    }, 500);
+});

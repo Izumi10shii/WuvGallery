@@ -22,7 +22,7 @@ function validateLogin() {
     } else {
         // Show error message
         message.style.color = "red";
-        message.textContent = "Invalid username or password!";
+        message.textContent = "Wrong! Hint: Callsign, Anniversary";
         message.style.display = "block";
     }
 }

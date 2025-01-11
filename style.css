@@ -238,7 +238,7 @@ section {
 }
 
 .box-area {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -342,7 +342,7 @@ section {
     font-size: 5rem;
     color: white;
     background-color: #a194f93d;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 
 .description {
@@ -414,7 +414,7 @@ section {
     text-align: center;
     padding-bottom: 10px;
     font-size: 2rem;
-    color: white;
+    color: rgb(63, 63, 63);
   }
 
   .bottomtext1 {
@@ -422,7 +422,7 @@ section {
     bottom: 40px;
     padding-bottom: 10px;
     font-size: 2rem;
-    color: white;
+    color: rgb(63, 63, 63);
   }
 
 /* Responsive Home */
@@ -434,6 +434,7 @@ section {
     .description {
         padding: 5px;
         font-size: 1.1rem;
+        margin: 10px;
     }
 
     .bottomtext {
