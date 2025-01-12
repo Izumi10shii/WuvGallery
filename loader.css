@@ -7,9 +7,21 @@
     left: 0;
     background-color: #fdc2ff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 999;
+}
+
+.pagetitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  padding-bottom: 25px;
+  font-weight: bold;
 }
 
 .loader {
@@ -70,5 +82,11 @@
     
     100% {
       height: 0%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .pagetitle {
+      font-size: 2rem;
     }
   }

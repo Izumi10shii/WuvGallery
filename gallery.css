@@ -22,6 +22,7 @@ section {
 
 .sidebar {
     width: 270px;
+    z-index: 999;
     position: fixed;
     margin: 16px;
     border-radius: 16px;
