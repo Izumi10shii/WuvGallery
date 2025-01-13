@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(#F5EFFF, #E5D9F2);
+    background-color: #EFB6C8;
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -27,7 +27,7 @@ section {
     margin: 16px;
     border-radius: 16px;
     height: calc(100vh - 32px);
-    background-color: #A294F9;
+    background-color: #96737e;
     transition: 0.4s ease;
 }
 
@@ -56,7 +56,7 @@ section {
     height: 35px;
     width: 35px;
     border: none;
-    color: #A294F9;
+    color: #96737e;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +97,7 @@ section {
     display: flex;
     gap: 4px;
     border-radius: 8px;
-    color: #A294F9;
+    color: #96737e;
     padding: 0 15px;
     flex-direction: column;
     transform: translateY(15px);
@@ -122,7 +122,7 @@ section {
 
 .sidebar-nav .nav-link:hover {
     background-color: #fff;
-    color: #A294F9;
+    color: #96737e;
 }
 
 .sidebar-nav .nav-link .nav-label {
@@ -145,7 +145,7 @@ section {
     left: calc(100% + 25px);
     pointer-events: none;
     opacity: 0;
-    color: #A294F9;
+    color: #96737e;
     background-color: #fff;
     padding: 6px 12px;
     border-radius: 8px;
@@ -182,7 +182,7 @@ section {
         position: sticky;
         top: 0;
         z-index: 20;
-        background: #A294F9;
+        background: #96737e;
         padding: 8px 10px;
         border-radius: 16px;
     }
@@ -233,22 +233,52 @@ section {
     min-height: 100vh;
     width: 100%;
     flex-direction: column;
-    background-color: #ab9ff7;
+    background-color: #EFB6C8;
     overflow-x: hidden;
 }
 
 .section-title {
     top: 5px;
+    font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    color:rgb(230, 224, 236);
     font-size: 5rem;
-    background-color: #dbc4f134;
+}
+
+.important-notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100vw - 20%);
+    height: 100px;
+    background-color: #c28296;
+    margin: 20px;
+    color: white;
+}
+
+.storagebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100vw - 20%);
+    height: 100px;
+    background-color: #c28296;
+    margin: 20px;
+}
+
+.linkstorage a {
+    text-decoration: none;
+    color: white;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .section-title {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 }

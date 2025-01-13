@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    background-color: #8174A0;
+    background-color: #7a5785;
     overflow-x: hidden;
     max-width: 100%;
 }
@@ -26,7 +26,7 @@ section {
     margin: 16px;
     border-radius: 16px;
     height: calc(100vh - 32px);
-    background-color: #403a4e;
+    background-color: #3b2b41;
     transition: 0.4s ease;
 }
 
@@ -55,7 +55,7 @@ section {
     height: 35px;
     width: 35px;
     border: none;
-    color: #A294F9;
+    color: #3b2b41;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +96,7 @@ section {
     display: flex;
     gap: 4px;
     border-radius: 8px;
-    color: #A294F9;
+    color: #3b2b41;
     padding: 0 15px;
     flex-direction: column;
     transform: translateY(15px);
@@ -121,7 +121,7 @@ section {
 
 .sidebar-nav .nav-link:hover {
     background-color: #fff;
-    color: #A294F9;
+    color: #3b2b41;
 }
 
 .sidebar-nav .nav-link .nav-label {
@@ -144,7 +144,7 @@ section {
     left: calc(100% + 25px);
     pointer-events: none;
     opacity: 0;
-    color: #A294F9;
+    color: #3b2b41;
     background-color: #fff;
     padding: 6px 12px;
     border-radius: 8px;
@@ -181,7 +181,7 @@ section {
         position: sticky;
         top: 0;
         z-index: 20;
-        background: #403a4e;
+        background: #3b2b41;
         padding: 8px 10px;
         border-radius: 16px;
     }
@@ -234,7 +234,7 @@ section {
     min-height: 100vh;
     width: 100%;
     flex-direction: column;
-    background-color: #8174A0;
+    background-color: #7a5785;
     overflow-x: hidden;
 }
 
