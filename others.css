@@ -259,26 +259,97 @@ section {
     color: white;
 }
 
+.note, .details {
+    font-size: 1.5rem;
+}
+
 .storagebox {
+    position: absolute;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     width: calc(100vw - 20%);
-    height: 100px;
+    height: 150px;
     background-color: #c28296;
-    margin: 20px;
+    padding: 10px;
+}
+
+.linkstorage {
+    border: pink solid 2px;
+    background: none;
+    border-radius: 20px;
+    transition: 0.4s ease-in-out;
 }
 
 .linkstorage a {
     text-decoration: none;
     color: white;
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.linkstorage:hover {
+    border: #462831 solid 3px;
+}
+
+.note-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    background-color: #462831;
+    border-radius: 20px;
+}
+
+.note1 {
+    color: white;
+}
+
+.btn {
+    background-color: #462831;
+    border: pink solid 2px;
+}
+
+.btn:hover {
+    background-color: #2b181d;
+    border: none;
+}
+
+.btn-primary.active,
+.btn-primary:active {
+    background-color: #462831 !important;
+    border-color: #462831 !important;
+}
+
+.btn-primary:focus {
+    border-color: #462831;
+    box-shadow: none;
+}
+
+.card {
+    background: none;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .section-title {
         font-size: 3rem;
+    }
+
+    .linkstorage a {
+        font-size: 2rem;
+    }
+
+    .note, .details {
+        font-size: 1.2rem;
+    }
+
+    .storagebox {
+        height: 80px;
     }
 }
