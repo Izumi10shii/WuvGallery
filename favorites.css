@@ -243,7 +243,6 @@ section {
     border-radius: 10px;
     color: white;
     font-size: 5rem;
-    background-color: #dbc4f134;
     font-weight: bold;
 }
 
@@ -267,7 +266,7 @@ section {
     align-items: center; 
     min-height: 100vh; 
     margin: 20px 100px 20px 100px;
-    z-index: 100;
+    z-index: 5;
 }
 
 .gallerycollection {
@@ -301,10 +300,28 @@ section {
     border-radius: 10px;
 }
 
+.footer {
+    background-color: #231927; 
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 6;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
-    #favorites {
+    #favorite {
         padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     .section-title {

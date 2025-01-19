@@ -336,10 +336,29 @@ section {
     background: none;
 }
 
+.footer {
+    background-color: #6d535b; 
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 6;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
-    #others {
+    #other {
         padding-top: 100px;
+        padding-bottom: 50px;
     }
 
     .section-title {

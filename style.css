@@ -408,22 +408,22 @@ section {
     border-radius: 5px;
   }
 
-  .bottomtext {
-    position: absolute;
-    bottom: 0;
+  .footer {
+    background-color: #8479c7; 
+    color: white;
     text-align: center;
-    padding-bottom: 10px;
-    font-size: 2rem;
-    color: rgb(63, 63, 63);
-  }
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 5;
+}
 
-  .bottomtext1 {
-    position: absolute;
-    bottom: 40px;
-    padding-bottom: 10px;
-    font-size: 2rem;
-    color: rgb(63, 63, 63);
-  }
+.footer p {
+    margin: 0;
+}
+
 
 /* Responsive Home */
 @media (max-width: 768px) {
