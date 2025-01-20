@@ -2,4 +2,5 @@
 
 Website for Chelle and David
 
-- Padding Top in Favorites and Others section
+- 100% Done
+- Maintenance Phase
