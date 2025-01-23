@@ -306,6 +306,7 @@ section {
     text-align: center;
     font-size: 1.2rem;
     bottom: 0;
+    position: fixed;
     width: 100%;
     padding: 5px;
     z-index: 6;
