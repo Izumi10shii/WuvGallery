@@ -264,9 +264,17 @@ section {
     border-radius: 20px;
 }
 
+.diaries:nth-child(2) {
+    border: pink solid 2px;
+}
+
 .month {
     color: white;
     font-size: 3rem;
+}
+
+.month:nth-child(2) {
+    color: pink;
 }
 
 .january {
