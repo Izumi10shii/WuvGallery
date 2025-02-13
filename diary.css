@@ -264,7 +264,7 @@ section {
     border-radius: 20px;
 }
 
-.diaries:nth-child(2) {
+.feb {
     border: pink solid 2px;
 }
 
@@ -273,7 +273,7 @@ section {
     font-size: 3rem;
 }
 
-.month:nth-child(2) {
+.febmonth {
     color: pink;
 }
 
