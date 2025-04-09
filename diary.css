@@ -272,9 +272,17 @@ section {
     border: orange solid 2px;
 }
 
+.apr {
+    border: yellow solid 2px;
+}
+
 .month {
     color: white;
     font-size: 3rem;
+}
+
+.janmonth {
+    color: #9efcff;
 }
 
 .febmonth {
@@ -285,8 +293,12 @@ section {
     color: orange;
 }
 
+.aprmonth {
+    color: yellow;
+}
+
 .january {
-    color: white;
+    color: #9efcff;
     font-size: 1.5rem;
 }
 
@@ -297,6 +309,11 @@ section {
 
 .march {
     color: orange;
+    font-size: 1.5rem;
+}
+
+.april {
+    color: yellow;
     font-size: 1.5rem;
 }
 
